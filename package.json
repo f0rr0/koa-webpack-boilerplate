@@ -1,0 +1,31 @@
+{
+  "name": "koa-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "Minimal boilerplate to create REST apps with Node6+, Koa2 and Webpack2. Supports Hot Module Replacement for seamless workflow.",
+  "keywords": ["koa", "webpack", "server", "backend", "hot module replacement", "hmr", "async", "boilerplate", "es6"],
+  "scripts": {
+  "clean": "rm -rf ./build",
+  "build:prod": "npm run clean && `npm bin`/webpack --env.prod -p",
+  "watch": "npm run clean && `npm bin`/webpack --env.dev --watch --verbose --hot",
+  "start": "node ./build/server.js"
+  },
+  "author": "Siddharth Jain <sid26@ucla.edu>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sidjain26/koa-webpack-boilerplate"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "uglify-js": "git+https://git@github.com/mishoo/UglifyJS2.git#harmony",
+    "webpack": "^2.1.0-beta.14"
+  },
+  "dependencies": {
+    "koa": "^2.0.0",
+    "koa-logger": "^2.0.0",
+    "koa-route": "^3.1.0",
+    "pokedex-promise-v2": "^2.1.0"
+  }
+}
