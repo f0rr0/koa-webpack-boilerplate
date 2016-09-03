@@ -1,5 +1,6 @@
 const { resolve } = require('path');
 const { dependencies } = require('./package.json');
+const BabiliPlugin = require("babili-webpack-plugin");
 
 const nodeModules = {};
 
@@ -9,7 +10,7 @@ Object
      nodeModules[mod] = `commonjs ${mod}`;
     });
 
-module.exports = (env) => ({
+module.exports = (env = { dev: true }) => ({
     context: resolve(__dirname, './src'),
     entry: {
      server: env.prod ? './index.js' : ['webpack/hot/poll?1000', './index.js']
@@ -32,5 +33,8 @@ module.exports = (env) => ({
        }
      ]
     },
+    plugins: env.prod ? [
+      new BabiliPlugin()
+    ] : [],
     externals: nodeModules
 });
