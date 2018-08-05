@@ -1,5 +1,7 @@
 ### koa-webpack-boilerplate
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/f0rr0/koa-webpack-boilerplate.svg)](https://greenkeeper.io/)
+
 Minimal boilerplate to create REST apps with:
 * [Node 6+](https://nodejs.org/en/) (Supports 96% of ES6)
 * [Koa 2](https://github.com/koajs/koa/tree/v2.x) (async/await transpiled with Babel)
