@@ -27,15 +27,15 @@
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.10.4",
-    "babel-loader": "^6.2.4",
+    "babel-loader": "^7.1.5",
     "babel-plugin-transform-async-to-generator": "^6.8.0",
-    "babili-webpack-plugin": "0.0.2",
-    "webpack": "^2.1.0-beta.14"
+    "babili-webpack-plugin": "0.1.2",
+    "webpack": "^4.16.4"
   },
   "dependencies": {
     "koa": "^2.0.0",
-    "koa-logger": "^2.0.0",
+    "koa-logger": "^3.2.0",
     "koa-route": "^3.1.0",
-    "pokedex-promise-v2": "^2.1.0"
+    "pokedex-promise-v2": "^3.1.1"
   }
 }
